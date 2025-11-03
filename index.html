@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Team Spark - Home</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+   <style>
+     * {
+       box-sizing: border-box;
+     }
+     body {
+       margin: 0;
+       font-family: 'Poppins', sans-serif;
+       background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+       background-size: cover;
+       color: #fff;
+     }
+     .navbar {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       background: rgba(0, 0, 0, 0.6);
+       padding: 15px 30px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       z-index: 1000;
+       backdrop-filter: blur(10px);
+     }
+     .navbar h3 {
+       margin: 0;
+       color: #00f7ff;
+       font-weight: 600;
+       font-size: 1.5rem;
+     }
+     .navbar-links {
+       display: flex;
+       gap: 20px;
+     }
+     .navbar a {
+       color: #fff;
+       text-decoration: none;
+       font-weight: 600;
+       font-size: 1rem;
+       padding: 8px 12px;
+       border-radius: 8px;
+       transition: all 0.3s ease-in-out;
+     }
+     .navbar a:hover {
+       background-color: rgba(255, 255, 255, 0.2);
+       color: #1de9b6;
+     }
+     .main-content {
+       background: rgba(0, 0, 0, 0.75);
+       min-height: 100vh;
+       padding: 140px 20px 60px;
+       text-align: center;
+       animation: fadeIn 1.2s ease-in;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+     @keyframes fadeIn {
+       from { opacity: 0; }
+       to { opacity: 1; }
+     }
+     h1 {
+       font-size: 4em;
+       margin-bottom: 10px;
+       color: #00f7ff;
+       text-shadow: 2px 2px 6px #000;
+     }
+     h2 {
+       font-size: 2em;
+       color: #ffd700;
+       margin-bottom: 30px;
+     }
+     .cta-button {
+       margin-top: 30px;
+       padding: 14px 30px;
+       background-color: #1de9b6;
+       color: #000;
+       text-decoration: none;
+       font-weight: bold;
+       font-size: 1.2em;
+       border-radius: 30px;
+       transition: transform 0.3s ease, background-color 0.3s ease;
+       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+     }
+     .cta-button:hover {
+       background-color: #00bfa5;
+       transform: scale(1.05);
+     }
+ 
+     /* Added Section Styling */
+     section {
+       background-color: rgba(0, 0, 0, 0.7);
+       padding: 60px 20px;
+       margin-top: 20px;
+       text-align: center;
+     }
+     section h2 {
+       color: #1de9b6;
+       font-size: 2rem;
+     }
+     section p {
+       font-size: 1.1rem;
+       max-width: 800px;
+       margin: auto;
+       color: #eee;
+     }
+   </style>
+ </head>
+ <body>
+   <div class="navbar">
+     <h3>Team Spark</h3>
+     <div class="navbar-links">
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+     </div>
+   </div>
+ 
+   <div class="main-content">
+     <h1>Welcome to Team Spark</h1>
+     <h2>Where Innovation Meets Passion</h2>
+     <a href="about.html" class="cta-button">Explore Our Team</a>
+   </div>
+ 
+   <!-- ✅ Required Sections -->
+   <section id="about">
+     <h2>About Us</h2>
+     <p>Team Spark is a group of passionate tech enthusiasts exploring innovation and building real-world solutions.</p>
+   </section>
+ 
+   <section id="skills">
+     <h2>Our Skills</h2>
+     <p>We specialize in Web Development, Machine Learning, Cloud Computing, and Mobile App Development.</p>
+   </section>
+ 
+   <section id="projects">
+     <h2>Projects</h2>
+     <p>We’ve worked on Smart Energy Monitors, AI-powered Health Trackers, and IoT-based Home Automation.</p>
+   </section>
+ 
+   <section id="contact">
+     <h2>Contact Us</h2>
+     <p>Email us at: <a href="mailto:teamspark@example.com" style="color:#1de9b6;">teamspark@example.com</a></p>
+   </section>
+ </body>
+ </html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Our Team</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+   <style>
+     body {
+       margin: 0;
+       font-family: 'Poppins', sans-serif;
+       background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+       background-size: cover;
+       color: #fff;
+     }
+     .navbar {
+       position: fixed;
+       top: 0;
+       width: 100%;
+       background: rgba(0, 0, 0, 0.6);
+       padding: 15px 30px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       z-index: 1000;
+     }
+     .navbar h3 {
+       margin: 0;
+       color: #00f7ff;
+       font-weight: 500;
+     }
+     .navbar a {
+       color: #fff;
+       margin-left: 20px;
+       text-decoration: none;
+       font-weight: bold;
+       transition: color 0.3s;
+     }
+     .navbar a:hover {
+       color: #1de9b6;
+     }
+     .overlay {
+       background: rgba(0, 0, 0, 0.75);
+       min-height: 100vh;
+       padding: 100px 20px 60px;
+       text-align: center;
+       animation: fadeIn 1.2s ease-in;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+     @keyframes fadeIn {
+       from { opacity: 0; }
+       to { opacity: 1; }
+     }
+     h1 {
+       font-size: 4em;
+       margin-bottom: 10px;
+       color: #00f7ff;
+       text-shadow: 2px 2px 6px #000;
+     }
+     h2 {
+       font-size: 2em;
+       color: #ffd700;
+       margin-bottom: 30px;
+     }
+     .nav-links {
+       margin-top: 40px;
+     }
+     .nav-links a {
+       display: inline-block;
+       margin: 10px;
+       padding: 14px 28px;
+       background-color: #1de9b6;
+       color: #000;
+       text-decoration: none;
+       font-weight: bold;
+       border-radius: 30px;
+       transition: transform 0.3s ease, background-color 0.3s ease;
+       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+     }
+     .nav-links a:hover {
+       background-color: #00bfa5;
+       transform: scale(1.1);
+     }
+ 
+     /* Extra sections styling */
+     section {
+       background-color: rgba(0, 0, 0, 0.7);
+       padding: 60px 20px;
+       text-align: center;
+       margin-top: 20px;
+     }
+     section h2 {
+       color: #1de9b6;
+       font-size: 2rem;
+     }
+     section p {
+       font-size: 1.1rem;
+       max-width: 800px;
+       margin: auto;
+       color: #eee;
+     }
+   </style>
+ </head>
+ <body>
+   <div class="navbar">
+     <h3>Team Spark</h3>
+     <div>
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+     </div>
+   </div>
+ 
+   <div class="overlay">
+     <h1>Unleashing Creativity Through Code</h1>
+     <h2>Discover the Minds Behind the Magic</h2>
+     <div class="nav-links">
+       <a href="Beno.html">Beno's Portfolio</a>
+       <a href="Fejoe.html">Fejoe's Portfolio</a>
+       <a href="Nandha.html">Nandha Kumar's Portfolio</a>
+       <a href="Sanjai.html">Sanjai's Portfolio</a>
+
+     </div>
+   </div>
+ 
+   <!-- Required sections -->
+   <section id="about">
+     <h2>About Our Team</h2>
+     <p>We are a team of passionate developers and thinkers committed to building impactful tech projects together.</p>
+   </section>
+ 
+   <section id="skills">
+     <h2>Our Collective Skills</h2>
+     <p>We work with technologies such as Python, Java, JavaScript, Flask, React, and IoT platforms like ESP32.</p>
+   </section>
+ 
+   <section id="projects">
+     <h2>Highlighted Projects</h2>
+     <p>We’ve collaborated on Smart Energy Monitors, Portfolio Sites, IoT-based systems, and AI-driven solutions.</p>
+   </section>
+ 
+   <section id="contact">
+     <h2>Contact the Team</h2>
+     <p>Drop us a message at <a href="mailto:teamspark@example.com" style="color: #1de9b6;">teamspark@example.com</a></p>
+   </section>
+ </body>
+ </html>
